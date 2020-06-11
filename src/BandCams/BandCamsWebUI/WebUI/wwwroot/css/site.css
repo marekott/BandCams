@@ -1,0 +1,299 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 100%; /* Vertically center the text there */
+    background-color: #000000;
+}
+
+/* BandCams custom styles
+-------------------------------------------------- */
+.navbar {
+    background-color: #000000 !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.nav-item {
+    text-align: right !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+/*buttons*/
+.bc-button {
+    border-radius: 24px;
+    text-align: center;
+    padding: 6px 32px;
+    font-size: 16px;
+    width: 130px;
+}
+
+.btn-black {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff !important;
+}
+
+.btn-black:hover {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000 !important;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000 !important;
+}
+
+.btn-white:hover {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff !important;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+/*Paralex scrolling effect*/
+.paralax-image {
+    background-image: url("/img/index_main_image.jpg");
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.paralax-image-responsive {
+    height: 92vh;
+}
+
+.paralax-image h1 {
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+    font-family: sans-serif
+}
+
+.paralax-image p {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif
+}
+/*-------------------------------------------------- */
+
+/*Calendar*/
+.calendar {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.calendar-month {
+    width: 190px !important;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.calendar-button {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.calendar-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.background-muted {
+    background-color: #222222
+}
+
+.modal-content {
+    background-color: #000000;
+    border-color: #ffffff;
+}
+
+.row-calendar {
+    margin: 0 !important;
+}
+
+@media (max-width:991px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+
+    .day h5 {
+        padding: 3px 5px 5px;
+        margin: 0;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #ffffff;
+        width: 25%;
+        min-height: 108px;
+        font-size: 24px;
+    }
+
+    .day a {
+        font-size: 16px;
+    }
+
+    .date {
+        padding-left: 4px;
+    }
+
+    .day {
+        display: flex;
+        padding: 0 !important;
+    }
+
+    .day-empty {
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .xs-display-block {
+        display: block;
+        width: 75%;
+    }
+}
+
+@media (min-width: 576px) {
+    .day {
+        height: 14.2857vw;
+        max-height: 100px;
+        color: #ffffff !important;
+    }
+}
+/*-------------------------------------------------- */
+
+/*Index.cshtml*/
+.bc-paige-desc {
+    font-size: 17px;
+}
+
+.bc-event-img {
+    height: 13vw;
+    min-height: 200px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.bc-event-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.icon-centred {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}

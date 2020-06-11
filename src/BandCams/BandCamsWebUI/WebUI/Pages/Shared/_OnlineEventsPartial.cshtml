@@ -1,0 +1,19 @@
+﻿@model List<WebUI.Models.OnlineEvent>
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                @foreach (var onlineEvent in @Model)
+                {
+                    <div class="col-md-12 mt-2 text-center">
+                        <div class="bc-event-img" style="background-image: url('data:image;base64,@Convert.ToBase64String(onlineEvent.ImageContent)');"></div>
+                        <h3 class="bc-event-title text-white">@onlineEvent.Name</h3>
+                        <h5 class="text-white">@onlineEvent.StartDate.ToShortDateString()</h5>
+                        <a class="btn bc-button btn-black" href="@Url.Page("/OnlineEvents/Details", new {id = onlineEvent.Id})">WIĘCEJ</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

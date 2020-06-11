@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    body {
+        background: #000000 !important;
+    } 
+</style>
+
+<div id="modal-placeholder"></div>
+
+<div class="row justify-content-md-center">
+    <div class="col-md-10 text-center text-white bc-paige-desc">BANDCAMS to platforma pozwalająca zobaczyć artystów z całego kraju w jednym miejscu!</div>
+    <div class="col-md-10 text-center text-white mt-2 bc-paige-desc">
+        Live Streaming to następstwo rozwijających się nowych technologii, udowadniające że w dzisiejszych
+        czasach nie ma barier dla sztuki!
+    </div>
+    <div class="col-md-10 text-center text-white mt-2 bc-paige-desc">
+        Jedna strona, na której zobaczysz streamingi prowadzone na Facebooku, YouTube, Vimeo czy innych serwisach - dzięki czemu możesz poznać nowe brzmienia!
+    </div>
+    <div class="col-md-10 mx-auto text-center text-white mt-2 bc-paige-desc">
+        BANDCAMS to miejsce nie tylko dla zespołów, chcemy by pojawiały się tu również transmisje z teatrów, warsztatów, spotkań oraz wszystko inne, co związane jest z branżą artystyczną.
+    </div>
+</div>
+
+@if (@Model.Streams.Count > 0)
+{
+    <div class="row mt-5">
+        <div class="col-md-12 mx-auto">
+            <h2 class="text-center text-white">AKTUALNE STREAMY</h2>
+        </div>
+        @foreach (var stream in @Model.Streams)
+        {
+            <div class="col-md-4">
+                <a class="cursor-pointer" data-toggle="video-modal" data-url=@Url.Page("Index", "ShowModal", new {streamId=stream.Id})>
+                    <img class="img-fluid" src=@Model.GetVideoImageLink(stream.Link) alt="stream"/>
+                    <span class="icon-centred text-white">&#9658;</span>
+                </a>
+            </div>
+        }
+    </div>
+}
+
+@if (Model.OnlineEvents.Count > 0)
+{
+    <div class="row mt-5">
+        <div class="col-md-12 mx-auto">
+            <h2 class="text-center text-white">NADCHODZĄCE WYDARZENIA</h2>
+        </div>
+        @foreach (var onlineEvent in @Model.OnlineEvents)
+        {
+            <div class="col-md-3 mt-2 text-center">
+                <div class="bc-event-img" style="background-image: url('data:image;base64,@Convert.ToBase64String(onlineEvent.ImageContent)');"></div>
+                <h3 class="bc-event-title text-white">@onlineEvent.Name</h3>
+                <h5 class="text-white">@onlineEvent.StartDate.ToShortDateString()</h5>
+                <a class="btn bc-button btn-black" href="@Url.Page("/OnlineEvents/Details", new {id = onlineEvent.Id})">WIĘCEJ</a>
+            </div>
+        }
+    </div>
+}

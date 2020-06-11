@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Stream]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[CreateDate] DATETIME2 NOT NULL DEFAULT getutcdate(),
+	[Link] NVARCHAR(MAX) NOT NULL,
+	[IsActive] BIT NOT NULL
+)

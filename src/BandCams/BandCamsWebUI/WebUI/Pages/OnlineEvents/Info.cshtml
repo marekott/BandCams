@@ -1,0 +1,35 @@
+﻿@page
+@{
+    ViewData["Title"] = "Info";
+}
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1 class="mt-5">ZGŁOŚ STREAMING</h1>
+    </div>
+    <div class="col-md-12 text-center">
+        <img class="img-fluid" src="~/img/event_logo_503x503.webp" alt="event logo"/>
+    </div>
+    <div class="col-md-12 mb-3">
+        <p class="mb-2">Cześć!</p>
+        <p class="mb-0 text-underline">Jak działa streaming na BANDCAMS?</p>
+        <p class="mb-2">To proste! Jesteśmy platformą, na której można zobaczyć streamingi z różnych portali w jednym miejscu!</p>
+        <p class="mb-0 text-underline">Dlaczego warto dodać wcześniej wydarzenie?</p>
+        <p class="mb-2">Osoby przeglądające stronę mogą wcześniej zauważyć wydarzenie i wrócić na BANDCAMS specjalnie, żeby zobaczyć Twój streaming.
+            Ułatwisz nam dodatkowo rozplanowanie pracy na stronie :)</p>
+        <p class="mb-0 text-underline">Co należy zrobić?</p>
+        <p class="mb-2">Wstaw link do wydarzenia lub wypełnij formularz, jeżeli wydarzenie nie jest nigdzie utworzone. Możesz to zrobić pod zakładką 
+            <span><a href="#">zgłoś wydarzenie</a></span>. Pamiętaj o tym, że aby streaming był widoczny na stronie, musisz wysłać nam link. Może to być odnośnik 
+            do YouTube, Facebook, Vimeo lub każdej innej strony. Link należy wysłać poprzez formularz znajdujący się w zakładce 
+            <span><a href="#">zgłoś streaming</a></span>.</p>
+        <p class="mb-0 text-underline">Co możesz zyskać?</p>
+        <p class="mb-2">Najprościej mówiąc, nowych odbiorców. Organizując streaming na swoich profilach, zamykasz się na grono, które dobrze Cię zna. Dzięki BANDCAMS Twój występ może zobaczyć ktoś, kto wszedł tutaj zobaczyć inne wydarzenie.</p>
+    </div>
+    <div class="col-md-12 text-center">
+        <h4>DO USŁYSZENIA!</h4>
+    </div>
+    <div class="col-md-12 text-center">
+        <a class="btn bc-button btn-white" href="@Url.Page("/OnlineEvents/Add")">Zgłoś</a>
+    </div>
+</div>
+

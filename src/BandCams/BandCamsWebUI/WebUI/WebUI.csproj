@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BandCamsApiHelper\ApiHelper\ApiHelper.csproj" />
+    <ProjectReference Include="..\WebUI.Library\WebUI.Library.csproj" />
+  </ItemGroup>
+
+</Project>

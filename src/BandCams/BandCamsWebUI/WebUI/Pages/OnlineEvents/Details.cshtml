@@ -1,0 +1,16 @@
+﻿@page
+@model WebUI.Pages.OnlineEvents.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <img class="img-fluid" src="data:image;base64, @Convert.ToBase64String(Model.OnlineEvent.ImageContent)" alt="event image"/>
+    </div>
+    <div class="col-md-12">
+        <h3>@Model.OnlineEvent.Name</h3>
+        <p class="text-justify">@Model.OnlineEvent.Description</p>
+    </div>
+</div>
+

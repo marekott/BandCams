@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[EmailTemplates]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[TemplateName] VARCHAR(20) NOT NULL,
+	[Value] NVARCHAR(MAX) NOT NULL
+)

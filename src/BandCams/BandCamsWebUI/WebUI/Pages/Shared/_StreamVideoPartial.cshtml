@@ -1,0 +1,24 @@
+﻿@model WebUI.Models.Stream
+
+<div id="streamModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="video-container">
+                        <iframe id="video" class="mx-auto d-block" src=@Model.Link allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // stop playing video when modal is closed
+        $('#streamModal').on('hide.bs.modal', function () {
+            $("#video").attr('src', '');
+        });
+    });
+</script>

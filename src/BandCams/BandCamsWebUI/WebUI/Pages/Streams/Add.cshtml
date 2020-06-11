@@ -1,0 +1,26 @@
+﻿@page
+@model WebUI.Pages.Streams.AddModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1>ZGŁOŚ STREAMING</h1>
+    </div>
+    <div class="col-md-12">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Stream.Link"></label>
+                <input class="form-control" asp-for="Stream.Link" type="text" />
+                <span class="text-danger" asp-validation-for="Stream.Link"></span>
+            </div>
+            <button class="btn bc-button btn-white" type="submit">Wyślij</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

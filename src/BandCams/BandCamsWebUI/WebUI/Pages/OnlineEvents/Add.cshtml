@@ -1,0 +1,46 @@
+﻿@page
+@model WebUI.Pages.OnlineEvents.AddModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1>ZGŁOŚ STREAMING</h1>
+    </div>
+    <div class="col-md-12">
+        <form enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label asp-for="OnlineEvent.Name"></label>
+                <input class="form-control" asp-for="OnlineEvent.Name" type="text"/>
+                <span class="text-danger" asp-validation-for="OnlineEvent.Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OnlineEvent.StartDate"></label>
+                <input class="form-control" asp-for="OnlineEvent.StartDate" type="datetime-local">
+                <span class="text-danger" asp-validation-for="OnlineEvent.StartDate"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OnlineEvent.Organizer"></label>
+                <input class="form-control" asp-for="OnlineEvent.Organizer" type="text"/>
+                <span class="text-danger" asp-validation-for="OnlineEvent.Organizer"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OnlineEvent.Description"></label>
+                <input class="form-control" asp-for="OnlineEvent.Description" type="text"/>
+                <span class="text-danger" asp-validation-for="OnlineEvent.Description"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OnlineEventImage"></label>
+                <input class="form-control-file" asp-for="OnlineEventImage" type="file">
+                <span class="text-danger" asp-validation-for="OnlineEventImage"></span>
+            </div>
+            <button class="btn bc-button btn-white" type="submit">Wyślij</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts 
+{
+    <partial name="_ValidationScriptsPartial"/>    
+}

@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[OnlineEvent]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[Name] NVARCHAR(100) NOT NULL,
+	[Description] NVARCHAR(MAX) NOT NULL,
+	[StartDate] DATETIME2 NOT NULL,
+	[Organizer] NVARCHAR(100) NOT NULL,
+	[ImageContent] VARBINARY(MAX) NOT NUll
+)

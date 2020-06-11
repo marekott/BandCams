@@ -1,0 +1,21 @@
+﻿@page
+@model WebUI.Pages.CalendarModel
+@{
+    ViewData["Title"] = "Calendar";
+}
+
+<style>
+    body {
+        background: #000000 !important;
+    }
+</style>
+
+<div id="modal-placeholder"></div>
+
+<div class="row mt-5 mb-5">
+    <div class="col-md-12 mx-auto mb-3">
+        <h2 class="text-center text-white">KALENDARZ</h2>
+    </div>
+    <calendar id="bcCalendar" month="@DateTime.Now.Month" year="@DateTime.Now.Year" events="@Model.OnlineEvents"></calendar>
+</div>
+

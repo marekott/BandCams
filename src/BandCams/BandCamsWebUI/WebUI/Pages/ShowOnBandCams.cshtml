@@ -1,0 +1,33 @@
+﻿@page
+@{
+    ViewData["Title"] = "ShowOnBandCams";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <img class="img-fluid" src="~/img/stream_logo_503x503.webp" alt="stream logo"/>
+    </div>
+    <div class="col-md-6 my-auto">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">ZGŁOŚ STREAMING</h4>
+                <p class="card-text font-italic mb-4">DODAJ LINK DO STREAMINGU NA STRONĘ BANDCAMS</p>
+                <p><a href="@Url.Page("Streams/Info")">Dowiedz się więcej</a></p>
+                <a class="btn bc-button btn-white" href="@Url.Page("Streams/Add")">Zgłoś</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <img class="img-fluid" src="~/img/event_logo_503x503.webp" alt="event logo"/>
+    </div>
+    <div class="col-md-6 my-auto">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">ZGŁOŚ WYDARZENIE</h4>
+                <p class="card-text font-italic mb-4">POINFORMUJ ODBIORCÓW WCZEŚNIEJ O PLANOWANYM STREAMINGU</p>
+                <p><a href="@Url.Page("OnlineEvents/Info")">Dowiedz się więcej</a></p>
+                <a class="btn bc-button btn-white" href="@Url.Page("OnlineEvents/Add")">Zgłoś</a>
+            </div>
+        </div>
+    </div>
+</div>
