@@ -19,6 +19,7 @@ END
 
 --For the demo purpose below the database is seeded. The following lines originally were not included in this script.
 
+INSERT INTO [dbo].[BCParameter] (Key, Value) VALUES ('key','value');
 INSERT [dbo].[Stream] ([Link], [IsActive]) VALUES (N'https://www.youtube.com/embed/j9V78UbdzWI', 1);
 INSERT [dbo].[Stream] ([Link], [IsActive]) VALUES (N'https://www.youtube.com/embed/yr94hCvcTJo', 1);
 
