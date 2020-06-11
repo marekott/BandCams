@@ -86,7 +86,7 @@ dotnet run
 ```
 dotnet run
 ```
-9. You can now examine the main website on https://localhost:5001 and Data Access Layer Swagger on https://localhost:44312.
+9. You can now examine the main website on https://localhost:44312 and Data Access Layer Swagger on https://localhost:5001.
 
 <a name="faq"></a>
 ## FAQ
