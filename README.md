@@ -20,8 +20,11 @@ https://vsrm.dev.azure.com/wilkusania/_apis/public/Release/badge/8b414c84-d903-4
 1.2 [ BandCamsWebUI Components ](#webuicomponents)<br/>
 1.2 [ BandCamsDAL Components ](#dalcomponents)<br/>
 1.2 [ BandCamsScheduler Components ](#schedulercomponents)<br/>
-2. [ Running locally ](#runlocal)<br/>
-3. [ FAQ ](#faq)<br/>
+2. [ Infrastructure ](#infrastructure)<br/>
+2.1 [ Current ](#currentinfrastructure)<br/>
+2.2 [ Target ](#targetinfrastructure)<br/>
+3. [ Running locally ](#runlocal)<br/>
+4. [ FAQ ](#faq)<br/>
 
 <a name="overview"></a>
 ## Overview
@@ -61,8 +64,27 @@ https://bandcamsdal-d.azurewebsites.net/
 <a name="schedulercomponents"></a>
 ### BandCamsScheduler Components
 <p>
-  <img src="documentation/Level 3 Component diagram for BandCamsScheduler.png" alt=" Component diagram for BandCamsScheduler"/>
+  <img src="documentation/Level 3 Component diagram for BandCamsScheduler.png" alt="Component diagram for BandCamsScheduler"/>
 </p>
+
+<a name="infrastructure"></a>
+## Infrastructure
+
+<a name="currentinfrastructure"></a>
+### Current
+
+<p>
+  <img src="documentation/Deployment diagram current.png" alt="Deployment diagram current"/>
+</p>
+
+
+<a name="targetinfrastructure"></a>
+### Target
+
+<p>
+  <img src="documentation/Deployment diagram target.png" alt="Deployment diagram target"/>
+</p>
+
 
 <a name="runlocal"></a>
 ## Running locally
