@@ -23,7 +23,7 @@ namespace RestAPI.IntegrationTests.Controllers
 
             return Factory.WithWebHostBuilder(builder =>
             {
-                builder.UseSolutionRelativeContentRoot($"BandCamsDAL\\{nameof(RestAPI)}");
+                builder.UseSolutionRelativeContentRoot($@".\src\{nameof(RestAPI)}");
 
                 builder.ConfigureAppConfiguration((context, conf) =>
                 {

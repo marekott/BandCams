@@ -77,8 +77,8 @@ https://bandcamsdal-d.azurewebsites.net/
 1. Install MS localdb (https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver15). You can skip this part if you have Microsoft SQL Server on your locall machine.<br/>
 2. Build database project.<br/>
 3. Deploy database project.<br/>
-4. In \src\BandCams\BandCamsDAL\RestAPI.IntegrationTests\appsettings.IntegrationTests.json, \src\BandCams\BandCamsDAL\RestAPI\appsettings.Development.json and \src\BandCams\BandCamsWebUI\WebUI\appsettings.Development.json change value of "BandCamsDB" to connection string of created in previous step database.<br/>
-5. In \src\BandCams open CMD and run:
+4. In \test\RestAPI.IntegrationTests\appsettings.IntegrationTests.json, \src\RestAPI\appsettings.Development.json and \src\WebUI\appsettings.Development.json change value of "BandCamsDB" to connection string of created in previous step database.<br/>
+5. In root directory open CMD and run:
 ```
 dotnet build
 ```
@@ -86,11 +86,11 @@ dotnet build
 ```
 dotnet test
 ```
-7. If all tests are passing (one should be skipped). You are ready to run the application. Go to \src\BandCams\BandCamsDAL\RestAPI and run in CMD:
+7. If all tests are passing (one should be skipped). You are ready to run the application. Go to \src\RestAPI and run in CMD:
 ```
 dotnet run
 ```
-8. Got to \src\BandCams\BandCamsWebUI\WebUI and again run:
+8. Got to \src\WebUI and again run:
 ```
 dotnet run
 ```

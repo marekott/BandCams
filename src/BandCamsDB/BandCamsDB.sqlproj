@@ -85,7 +85,4 @@
   <ItemGroup>
     <PostDeploy Include="PostDeploymentScripts\Script.AddEmailTemplates.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="PublishLocations\BandCamsDB.publish.xml" />
-  </ItemGroup>
 </Project>

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\BandCamsApiHelper\ApiHelper\ApiHelper.csproj" />
+    <ProjectReference Include="..\ApiHelper\ApiHelper.csproj" />
     <ProjectReference Include="..\WebUI.Library\WebUI.Library.csproj" />
   </ItemGroup>
 
